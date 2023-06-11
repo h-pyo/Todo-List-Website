@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Less Stress, More Todo!</title>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/list-section.css">
+  <link rel="stylesheet" href="styles/todo-list.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="title">Less Stress, More Todo!!&#128516</h1>
+
+  <div class="list-section">
+    <div class="all-lists">
+      <h2 class="all-lists-header">My Lists</h2>
+      <ul id="list-categories">
+      </ul>
+    </div>
+    <form class="categories-form" action="javascript:addCategory(document.getElementById('new-list-content'))">
+      <input type="text" id='new-list-content' class="new-list" placeholder="New List Name" aria-label="New List Name"/>
+      <button class="new-list-button" aria-label="create-new-list">+</button>
+    </form>
+  </div>
+
+  <div class="todo-list">
+    <div class="todo-list-header">
+      <h2 id="todo-list-title"></h2>
+      <p id="todo-list-task-count"></p>
+    </div>
+
+    <div class="todo-body">
+
+      <div id="tasks"></div>
+
+      <div class="task-creator">
+          <form class="task-form" action="javascript:addTask(findCurrentCategory(), document.getElementById('new-task-content'), document.getElementById('date'))">
+            <input type="text" class="new-task" id="new-task-content" placeholder="New Task Name" aria-label="New Task Name"/>
+            <input class="date" id="date" type="date"/>
+            <button class="new-task-button" aria-label="create-new-task">+</button>
+          </form>
+      </div>
+      
+      <button id="remove-list-button" onclick="deleteCategory(findCurrentCategory())">Remove List</button>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

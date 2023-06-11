@@ -1,0 +1,92 @@
+.todo-list {
+  padding: 10px;
+  background-color: var(--dark-blue);
+  width: 500px;
+  border-radius: 20px;
+  margin-left: 90px;
+}
+
+.todo-list-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#todo-list-title {
+  margin: 0;
+  text-align: left;
+  flex: 1;
+}
+
+#todo-list-task-count {
+  margin: 0;
+  text-align: right;
+  flex: 1;
+}
+
+.new-task {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  border-bottom: 1px solid currentColor;
+  font-size: inherit;
+  order: 1; 
+}
+
+.new-task:focus {
+  opacity: 0.8;
+}
+
+.date {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  border-bottom: 1px solid currentColor;
+  font-size: inherit;
+  order: 2;
+}
+
+.task-form {
+  margin-top: 12px;
+}
+
+.new-task-button {
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.remove-task-button {
+  background: transparent;
+  border: 0;
+  color: var(--accent-color);
+  margin-top:10px;
+}
+
+.remove-task-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.new-task-button:hover {
+  opacity: 0.7;
+}
+
+#remove-list-button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  margin-top:10px;
+}
+
+#remove-list-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  text-decoration: underline;
+}
