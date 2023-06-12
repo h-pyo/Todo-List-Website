@@ -1,7 +1,6 @@
 let todos;
 let categories;
 let noActive = true;
-localStorage.clear();
 
 function findCurrentCategory() {
   const category = document.getElementById('active-list').innerText;
@@ -157,6 +156,7 @@ function addCategory(newList) {
       renderCategories();
     }
     saveCategory();
+    saveTodos();
   }
 }
 
@@ -245,4 +245,4 @@ function swapLists(event) {
   renderTasks(categoryToSwitchTo);
 }
 firstCatagoriesRender();
-renderTasks('Youtube');
+renderTasks(findCurrentCategory());

@@ -47,6 +47,16 @@ body {
   }
 }
 
+@media (min-width: 1500px) {
+  body {
+    grid-template-columns: 800px 1fr;
+    grid-template-rows: 175px 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    align-items: flex-start;
+  }
+}
+
 form {
   display: flex;
 }
