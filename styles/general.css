@@ -41,7 +41,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     background-color: var(--dark-blue);
-    width: 500px;
+    width: 450px;
     border-radius: 20px;
     margin: auto;
   }
@@ -49,7 +49,7 @@ body {
 
 @media (min-width: 1500px) {
   body {
-    grid-template-columns: 800px 1fr;
+    grid-template-columns: 500px 1fr;
     grid-template-rows: 175px 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 10px;
