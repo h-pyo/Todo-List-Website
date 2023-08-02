@@ -41,7 +41,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     background-color: var(--dark-blue);
-    width: 450px;
+    width: 425px;
     border-radius: 20px;
     margin: auto;
   }
