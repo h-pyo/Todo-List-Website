@@ -156,6 +156,7 @@ function addCategory(newList) {
       renderCategories();
     }
     saveCategory();
+    saveTodos();
   }
 }
 
@@ -244,4 +245,4 @@ function swapLists(event) {
   renderTasks(categoryToSwitchTo);
 }
 firstCatagoriesRender();
-renderTasks('Youtube');
+renderTasks(findCurrentCategory());
