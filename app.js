@@ -1,7 +1,6 @@
 let todos;
 let categories;
 let noActive = true;
-localStorage.clear();
 
 function findCurrentCategory() {
   const category = document.getElementById('active-list').innerText;
